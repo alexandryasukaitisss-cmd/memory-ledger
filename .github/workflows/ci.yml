@@ -12,6 +12,10 @@ jobs:
       matrix:
         os: [ubuntu-24.04, macos-15, windows-2025]
         node: [24, 26]
+        include:
+          - os: ubuntu-24.04
+            node: 24
+            python: '3.10'
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v6
@@ -20,7 +24,7 @@ jobs:
           node-version: ${{ matrix.node }}
       - uses: actions/setup-python@v6
         with:
-          python-version: '3.14'
+          python-version: ${{ matrix.python || '3.14' }}
       - name: Versions and SQLite FTS5
         run: |
           node --version

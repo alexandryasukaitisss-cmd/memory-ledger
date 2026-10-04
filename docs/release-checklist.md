@@ -1,9 +1,9 @@
 # Before a stable integrated release
 
 - [x] 62 standalone tests, synthetic demo, journal backup/restore and raw JSONL export pass locally.
-- [x] GitHub CI passes on Linux and macOS with Node 24 and 26. Windows fixes are prepared and await another run.
+- [x] GitHub CI passes on Linux, macOS and Windows with Node 24 and 26.
 - [x] Schema compatibility, private POSIX file permissions and explicit database paths documented in operations.md.
-- [ ] Verify the corrected Windows CI. Its core checks do not certify Windows ACL privacy or Hermes.
+- [x] Corrected Windows core CI passes. It does not certify Windows ACL privacy or Hermes.
 - [ ] Verify the optional plugin against a pinned live Hermes gateway version.
 - [ ] Add an installation/configuration helper that validates private permissions and explicit paths.
 - [ ] Measure search and delivery latency on larger synthetic stores.
