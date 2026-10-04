@@ -1,0 +1,23 @@
+{
+  "name": "memory-ledger",
+  "description": "Append-only AI agent memory and temporal fact history: evidence, supersession, conflict rollback, durable SQLite delivery, Node/Python parity.",
+  "topics": [
+    "agent-memory",
+    "ai-agents",
+    "llm",
+    "llm-wiki",
+    "mempalace",
+    "sqlite",
+    "nodejs",
+    "python",
+    "event-sourcing",
+    "temporal-data",
+    "provenance",
+    "local-first",
+    "mcp",
+    "hermes"
+  ],
+  "license": "MIT",
+  "readme": "README.md",
+  "readme_ru": "README.ru.md"
+}

@@ -1,0 +1,9 @@
+name: local-mempalace
+version: 1.0.0
+description: "Profile- and topic-isolated MemPalace context with exact direct write confirmation."
+author: local
+provides_tools:
+  - mempalace_context
+  - mempalace_propose_write
+provides_hooks:
+  - pre_gateway_dispatch

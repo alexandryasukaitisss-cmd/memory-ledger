@@ -1,0 +1,16 @@
+Memory Ledger — extracted local additions, 2026.
+
+MemPalace (https://github.com/MemPalace/mempalace) is the upstream project around
+which the shared memory journal and Python integration were developed.
+This export does not include the complete upstream distribution.
+The fact-lineage implementation was extracted from the author's LLM Wiki app.
+
+Extraction changes:
+- The workspace runtime policy was replaced by a minimal standalone policy.
+- The Wiki bridge's default local module path now points into this repository.
+- Tests use standalone module paths and synthetic temporary databases.
+- Only three standard-library Node/Python contract cases were selected from
+  the broader production integration suite.
+
+No user databases, original documents, personal photos, authenticated routes,
+credentials, runtime logs, model files or chat transcripts are distributed.

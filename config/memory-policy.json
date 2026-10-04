@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "experimentalMemory": {
+    "version": 1,
+    "enabled": true,
+    "antiHits": {
+      "enabled": true,
+      "defaultItems": 3,
+      "maxItems": 5,
+      "maxCandidateScan": 80,
+      "maxItemChars": 1200
+    },
+    "structuralRecall": {
+      "enabled": true,
+      "defaultItems": 4,
+      "maxItems": 8,
+      "maxHops": 1,
+      "maxCandidatesPerAnchor": 40,
+      "maxItemChars": 1200
+    }
+  },
+  "adapterOperations": {
+    "memory-objectives": [
+      "observe",
+      "local_write"
+    ]
+  }
+}
