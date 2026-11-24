@@ -89,3 +89,13 @@ This repository contains the extracted additions and synthetic examples, not a c
 
 [MIT License](LICENSE). See [NOTICE](NOTICE) for provenance and extraction changes.
 [Release checklist](docs/release-checklist.md).
+
+## Local-First Agent Memory Stack
+
+This repository is part of a modular, local-first stack for reliable AI agent memory (each component works standalone):
+
+| Layer | Repository | Responsibility |
+| --- | --- | --- |
+| **1. Temporal Fact Ledger** | [memory-ledger](https://github.com/alexandryasukaitisss-cmd/memory-ledger) | Append-only SQLite event journal, provenance, `A → B → A` supersession, conflict rollback vs retraction |
+| **2. Permission-First Retrieval** | [mempalace-retrieval](https://github.com/alexandryasukaitisss-cmd/mempalace-retrieval) | Scope filtering before ranking, Reciprocal Rank Fusion, stale-fact rejection, evidence-based abstention |
+| **3. Vector Space Integrity** | [embedding-contract](https://github.com/alexandryasukaitisss-cmd/embedding-contract) | Fails fast on model/dimension/prefix drift across Ollama Gemma and optional Gemini embeddings |
